@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+/*    background: #333 url('img/bg.jpg') center center no-repeat;*/
+    background-size: cover;
+    color: #064660;
+}
+
+#container {
+    width: 400px;
+    margin: 40px auto 0;
+    padding: 50px;
+    box-sizing: border-box;
+    background: url('img/paper-pattern.jpg') top left repeat;
+    box-shadow: 0 10px 15px -8px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+form input[type="text"] {
+    width: 90px;
+}
+
+form input[type="password"] {
+    width: 90px;
+}
+
+
+button {
+    background: #064660;
+    color: white;
+    border: none;
+    border-bottom: solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #096990;
+    border-bottom-color: #111;
+    color: white;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+/* clock */
+.clock {
+width: 220px;
+margin: 0 auto;
+padding: 10px;
+color: #064660;
+}
+.clock ul {
+width: 220px;
+margin: 0 auto;
+padding: 0;
+list-style: none;
+text-align: center
+}
+
+.clock ul li {
+display: inline;
+font-size: 1.5em;
+text-align: center;
+font-family: "Arial", Helvetica, sans-serif;
+}
+
+#Date { 
+font-family: 'Arial', Helvetica, sans-serif;
+font-size: 18px;
+text-align: center;
+padding-bottom: 5px;
+}
+
+#point {
+position: relative;
+-moz-animation: mymove 1s ease infinite;
+-webkit-animation: mymove 1s ease infinite;
+padding-left: 3px;
+padding-right: 3px
+}
+
+/* Animasi Detik Kedap - Kedip */
+@-webkit-keyframes mymove 
+{
+0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; } 
+}
+
+@-moz-keyframes mymove 
+{
+0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;}
+50% {opacity:0; text-shadow:none; }
+100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; } 
+}
+/* end clock */
+
+
+
+
+
